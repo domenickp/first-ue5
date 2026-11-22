@@ -26,9 +26,11 @@
 
 ## Open questions
 <!-- Anything you're unsure about. These become discussion topics. -->
-- Is phase 1 true 2D, or a 3D world with a side camera (2.5D)?
-- Which part is synced to "House of Mirrors": the whole castle sequence, the boss, or the reversal?
-- What does the transformation look like, and is phase 3 also in first person?
+- ~~2D or 3D side view?~~ **3D world viewed from the side.** The seamless transition is essential.
+- ~~What's synced to the song?~~ **The whole castle fight.** It ends with the song; falling behind = death.
+- What does "keeping up" with the sequence mean exactly? (See music-sync.md.)
+- Transformation: draft written in story.md. Still open: does phase 3 stay in first person?
 - Where does phase 3 happen: the yard, or back across the whole level?
-- How does the game end after the last demon dies?
-- What happens when the player dies?
+- ~~How does it end?~~ A powerful demon assigns tasks and the player accepts. Details later.
+- What happens when the player dies? Restart the castle fight and the song?
+- What music plays in phase 3, after the song ends?

@@ -11,6 +11,7 @@ Design documents for an Unreal Engine 5 game. Fill these out roughly. A messy dr
 | [characters.md](characters.md) | The player character, allies, enemies, NPCs |
 | [art-direction.md](art-direction.md) | Visual style, palette, lighting, references |
 | [audio.md](audio.md) | Music, sound effects, voice |
+| [music-sync.md](music-sync.md) | Cue sheet: what happens at each point in the castle-fight song |
 | [scope.md](scope.md) | Priorities, vertical-slice plan, open questions |
 | `art/` | Reference images (moodboard, characters, locations, UI) |
 | `audio-references/` | Links or notes for music and sound references |
