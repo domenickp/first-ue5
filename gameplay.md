@@ -42,10 +42,28 @@ for the order of events.
 
 ### System: Music sync (castle fight)
 - **Purpose:** Pillar 3, "the music drives the climax"
-- **How it works:** the whole castle fight runs on the song's timeline. Waves, the boss
-  emergence and other events fire at set points in the song. The fight ends when the song ends.
-- **Failure:** if the player doesn't keep up with the sequence, they die.
+- **How it works:** everything from entering the yard to the end of the level runs on the
+  song's 3:40 timeline. Waves, the boss emergence, the transformation and other events fire at
+  set points in the song. The level ends when the song ends.
+- **Failure:** if the player doesn't keep up with the sequence, they die. See *Corruption meter*.
+- **On death:** restart the castle fight and the song from the beginning.
 - **Details:** see [music-sync.md](music-sync.md)
+- **Priority:** [MUST]
+
+### System: Corruption meter
+- **Purpose:** the "keeping up" rule for the synced fight. It also ties failure into the story:
+  fall behind and the evil weapons consume you.
+- **Rule (chosen):** the meter drains over time and fills with kills. If it empties, the player
+  dies. It's calculated relative to the checkpoints in [music-sync.md](music-sync.md).
+- **Draft of how "relative to the checkpoints" could work** (for discussion):
+  - Each stretch between checkpoints has a kill target (e.g. "all of wave 1 by 0:54").
+  - The meter compares **how far through the kills** the player is against **how far through
+    the time** they are. Ahead of pace = meter high; behind pace = meter falls.
+  - A buffer gives some slack, so a player slightly behind isn't killed instantly.
+  - Reaching a checkpoint on time refills or resets the meter for the next stretch.
+- **Warning:** the music. As the meter falls, the song gets distorted or muffled, for example.
+  <!-- Exact effect TBD. -->
+- **Phase 3:** <!-- does the meter still apply after the transformation, maybe as "hunger"? -->
 - **Priority:** [MUST]
 
 ### System: Combat, phase 1 (side-scroll)
@@ -74,8 +92,9 @@ for the order of events.
 Fixed and story-driven: basic weapons → evil weapons → demon form. No upgrades or skill tree.
 
 ## Difficulty & failure
-- **Castle fight:** falling behind the music sequence kills the player (see [music-sync.md](music-sync.md)).
-<!-- What happens after death? Restart the level? Restart the castle fight (and the song)? -->
+- **Castle fight:** falling behind the music sequence kills the player (corruption meter).
+  On death, the castle fight and the song restart from the beginning.
+- **Phase 1:** <!-- what happens on death in the side-scroller? -->
 
 
 ## Enemies / challenges
