@@ -15,6 +15,19 @@
 ## Locations
 <!-- Copy one block per location / level / region. Put reference images in art/locations/. -->
 
+### Location: The hills
+- **Role in the game:** phase 1, the side-scrolling journey
+- **Description:** a hilly, grassy landscape
+- **Weather / mood:** moody, a little dark, but expressing earnest adventure
+- **Gameplay here:** platforming obstacles and low-level enemies
+- **Key landmarks:** the castle, visible in the distance? <!-- -->
+
+### Location: The castle and its yard
+- **Role in the game:** the source of the evil; phases 2 and 3
+- **Description:** a castle with a door and windows that enemies pour out of, a yard, and a
+  fence (which the player gets thrown into)
+- **Gameplay here:** wave fights, the boss fight, the reversal
+
 ### Location: [name]
 - **Role in the game:** <!-- hub, level, boss arena, open area... -->
 - **Description:**

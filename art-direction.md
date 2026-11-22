@@ -2,6 +2,7 @@
 
 ## Style in one line
 <!-- e.g. "Photoreal but desaturated, like a foggy documentary" or "Painterly, saturated, storybook". -->
+Moody, open landscapes, like Skyrim. Dark, but with a sense of earnest adventure.
 
 
 ## Realism

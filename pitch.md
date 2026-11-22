@@ -1,69 +1,50 @@
 # Pitch
 
 ## Working title
-
+TBD
 
 ## Logline
-<!-- One sentence: "A ___ who must ___ in a world where ___." -->
 A person seeking to clear demons from a land becomes the thing they are attempting to eradicate.
 
 ## Genre & perspective
 - **Genre:** Action/Horror
-- **Camera:** Combination side-scroll and first person
+- **Camera:** Starts as a side-scroller, then switches to first person at the castle
 - **Single-player / multiplayer:** Single player
 - **Target platforms:** PC
-- **Rough length:** One level, about 20 minutes to play.
+- **Rough length:** One level, about 20 minutes to play
 
 ## The elevator pitch
-<!-- 1–2 paragraphs, written the way you'd describe it to a friend. -->
-The music will be important.  Most of the level will be adventure on a music loop, and
-the last sequence will be synchronized with the song House of Mirrors by Arch Enemy.
+A hunter crosses a moody, hilly landscape to destroy the source of a demonic plague. It plays
+as a side-scroller, a detached, almost objective view of the hero: predictable platforming,
+weak-looking enemies, basic weapons, music on a loop.
 
-This will be a single level game to start.  It begins as a side-scroller, feeling like an
-objective view of the player and their actions.  In this mode the game is predictable,
-consisting of platformer-style obstacles and enemies.  In this mode, the player will
-adventure through a hilly, grassy landscape dealing with low level enemies that look
-only slightly evil.  The player will use rudimentary weapons, such as basic melee
-and low-power firearms.  The atmosphere (landscape, weather, and music) will be moody,
-a little dark, but express earnest adventure.
+At the castle, the camera swings into first person and the hunter picks up powerful weapons
+imbued with evil. Demons pour out of the castle, a boss tears its way up through a portal, and
+the fight is synchronized to a song. Winning the fight completes the hunter's alignment with the
+evil in the weapons and transforms them into a demon. The surviving demons now flee in terror,
+and the player's last task is to hunt every one of them down.
 
-The player will eventually reach a castle, which is the source of the evil they are
-attempting to eradicate.  As they enter the yard, the game will swing into first-person
-view, and the player will pick up a couple powerful weapons (melee and firearm) that are
-imbued with evil power.  During this sequence, the player will not be able to control
-the character, as this is critical for the narriative.  Once they pick up the weapons,
-chaos breaks out.  Low-level but fierce enemies start pouring out of both the door and
-windows of the castle and charging at the player.  This first round is intense, but easily
-handled with the new weapons.  Then a second round starts, and stronger minons pour out once
-again, but a boss demon emerges out of the ground after a hexagram portal opens.  The
-player must then fight all of them at once.  When the boss first fully emerges, they
-will roar at the player, and the player will be thrown through the air, and their view will
-be rotated to the side, they will hit a fence, sustain some damamge, and get back up to
-begin the boss fight.
-
-After the boss fight is over, the player will have aligned themselves to the evil powers
-imbued in the weapons, and it will transform them to an evil entity themselves.  More demons
-appear, but they are now scared of the player.  The players task will be to elminate all
-demons in the level as they attempt to run away from the player.
-
+*(The full sequence of events is in [story.md](story.md), and the mechanics for each part are in
+[gameplay.md](gameplay.md).)*
 
 ## Design pillars
-<!-- 3–5 experiences every feature must serve. Use them to decide what gets built and what gets cut. -->
-1.
-2.
-3.
+<!-- 3–5 experiences every feature must serve. Use them to decide what gets built and what gets cut.
+     DRAFTS proposed by Claude from the braindump. Edit, replace or delete. -->
+1. **The camera tells the story.** Moving from a distant side view to first person is how the
+   player gets drawn into the corruption, not just a change of gameplay.
+2. **Power that corrupts.** Each step makes the player stronger and less heroic, until hunter
+   and hunted swap places.
+3. **The music drives the climax.** The final sequence is choreographed to the song.
+4. **Small but complete.** One level, about 20 minutes, polished from start to finish.
 
 ## Reference points
-<!-- "Plays like ___, feels like ___, looks like ___." Games, films, books, art. -->
-- **Plays like:** Modern side-scrollers at first, like Hallow Knight, then switching to
-a Doom-like first person experience.
-- **Feels like:** Action adventure at first, then swinging to an FPS.
-- **Looks like:** Moody, open landscapes, like Skyrim.
+- **Plays like:** Modern side-scrollers like Hollow Knight at first, then a Doom-like
+  first-person experience
+- **Feels like:** Action-adventure at first, swinging into an intense FPS
+- **Looks like:** Moody, open landscapes, like Skyrim
 
 ## What makes it different?
-<!-- Why would someone play this instead of the games it resembles? -->
-The shifts in perspective and swing into a personal experience.
+The shifts in perspective, and the swing from an objective view into a personal experience.
 
 ## Target player
-<!-- Who is it for? What do they enjoy? -->
-The target player enjoys action and horror motifs, and story-driven games.
+Players who enjoy action, horror motifs and story-driven games.
