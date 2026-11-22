@@ -5,8 +5,9 @@ Music matters a lot in this game.
 ## Music
 - **Phases 1–2 (exploration):** an adventure track on a loop. Moody and a little dark, but
   earnest.
-- **Final sequence:** synchronized to "House of Mirrors" by Arch Enemy.
-  <!-- Which part exactly: the castle-yard fight, the boss, or the reversal? -->
+- **Castle fight:** the **entire** fight is synchronized to "House of Mirrors" by Arch Enemy and
+  ends when the song ends. Timing details: [music-sync.md](music-sync.md).
+- **Phase 3 (the reversal):** <!-- music after the song ends? silence? a new loop? -->
 - **Adaptive?** <!-- Does the loop change as the player nears the castle? -->
 - **References:** "House of Mirrors" by Arch Enemy
 

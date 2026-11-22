@@ -24,7 +24,10 @@ critical to the narrative.
 - [PLAYABLE] Rudimentary weapons: basic melee and low-power firearms.
 - [?] The hunter reaches the castle and enters the yard.
 
-### Phase 2 — The Castle Yard (first person)
+### Phase 2 — The Castle Yard (first person, synced to "House of Mirrors")
+<!-- The whole castle fight runs on the song's timeline and ends when the song does.
+     Exact timings: music-sync.md -->
+
 - [CUTSCENE] On entering the yard, the camera swings into first person.
 - [CUTSCENE] The hunter picks up a powerful melee weapon and a firearm, both imbued with evil.
   The player has no control here.
@@ -37,17 +40,24 @@ critical to the narrative.
 - [PLAYABLE] The player gets back up. **Boss fight:** the boss and the wave-2 minions all at once.
 
 ### Phase 3 — The Reversal
-- [?] The boss dies. The hunter has aligned with the evil powers in the weapons and transforms
-  into an evil entity.
+- [CUTSCENE] The boss dies as the song ends. The hunter has aligned with the evil powers in the
+  weapons and transforms into an evil entity (see *The transformation* below).
 - [PLAYABLE] More demons appear, but now they are afraid of the player.
 - [PLAYABLE] The task: eliminate every demon in the level as they try to run away.
-- [?] Ending: <!-- what happens when the last demon dies? -->
+- [?] Ending: a powerful demon starts assigning tasks to the player, and the player accepts.
+  <!-- Details to be expanded. -->
 
 ## Choices & branching
 None. The story is linear.
 
 ## Ending(s)
-<!-- TBD -->
+This level is a **pivotal chapter**, not the whole story. It ends with the player, now a demon,
+accepting tasks from a powerful demon. That's the hook into the levels that come after.
+
+## Wider story (future levels)
+More levels are planned **before and after** this one. This level is the turning point where the
+hunter becomes a demon.
+<!-- Rough ideas for the earlier and later levels can go here as they come up. -->
 
 ## Key scenes
 
@@ -56,4 +66,10 @@ The boss fully emerges and roars. The player is thrown through the air, their vi
 to the side, they slam into a fence, take damage, and get back up to begin the fight.
 
 ### Scene: The transformation
-<!-- What does it look and feel like? Does the camera change again? Does the player see their new body? -->
+It should be dramatic. This is a key plot moment. First draft, to be developed further:
+1. The player is lifted into the air and hangs there for a moment.
+2. Purple, searing pentagrams burn onto their forearms. In first person, the player sees this
+   happening on their own arms.
+3. They shout in pain.
+4. They drop to the ground, land on their feet, and play resumes.
+<!-- Still open: lighting/sky change? sound? does the HUD change? does the player look different afterward? -->

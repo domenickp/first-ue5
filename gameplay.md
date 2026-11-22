@@ -34,8 +34,18 @@ for the order of events.
 - **Purpose:** Pillar 1, "the camera tells the story"
 - **How it works:** A side-view camera follows the player through phase 1. On entering the
   castle yard, it swings smoothly into the character's eyes.
-- **Open question:** is phase 1 a true 2D game, or a 3D world viewed from the side (often
-  called 2.5D)? A 3D world makes the swing into first person seamless. Recommended.
+- **Decided:** phase 1 is a **3D world viewed from the side** (2.5D). Movement is locked to a
+  path through the 3D level. The same character, level and camera system carry straight into
+  first person with no cut or loading.
+- **Requirement:** the transition must be seamless. This is the game's signature moment.
+- **Priority:** [MUST]
+
+### System: Music sync (castle fight)
+- **Purpose:** Pillar 3, "the music drives the climax"
+- **How it works:** the whole castle fight runs on the song's timeline. Waves, the boss
+  emergence and other events fire at set points in the song. The fight ends when the song ends.
+- **Failure:** if the player doesn't keep up with the sequence, they die.
+- **Details:** see [music-sync.md](music-sync.md)
 - **Priority:** [MUST]
 
 ### System: Combat, phase 1 (side-scroll)
@@ -64,7 +74,8 @@ for the order of events.
 Fixed and story-driven: basic weapons → evil weapons → demon form. No upgrades or skill tree.
 
 ## Difficulty & failure
-<!-- What happens if the player dies? Restart the level? Checkpoints at each phase? -->
+- **Castle fight:** falling behind the music sequence kills the player (see [music-sync.md](music-sync.md)).
+<!-- What happens after death? Restart the level? Restart the castle fight (and the song)? -->
 
 
 ## Enemies / challenges
