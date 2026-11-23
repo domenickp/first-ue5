@@ -10,7 +10,7 @@ A person seeking to clear demons from a land becomes the thing they are attempti
 - **Genre:** Action/Horror
 - **Camera:** Starts as a side-scroller, then switches to first person at the castle
 - **Single-player / multiplayer:** Single player
-- **Target platforms:** PC
+- **Target platforms:** Windows PC and macOS (Apple Silicon)
 - **Rough length:** One level. Current plan: about 5 minutes of side-scrolling plus the 3:40
   synced castle sequence, so roughly 9 minutes. (The original estimate was 20 minutes.)
 

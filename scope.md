@@ -6,6 +6,18 @@
 - **Skills available:** <!-- programming, 3D, animation, audio, writing... -->
 - **Budget for assets/tools:**
 
+## Platforms
+- **Windows PC:** primary development and test machine.
+- **macOS:** also a target. Tested on an M5 MacBook Pro.
+  - Mac builds must be packaged on the Mac (requires Xcode).
+  - Do a Mac test build at each milestone, starting with the camera-transition prototype, so
+    Mac-specific problems (graphics features, performance) show up early.
+  - Lumen and Nanite support on Mac is more limited than on Windows. Check what the chosen
+    engine version supports before the art direction depends on it.
+  - Unsigned builds shared with others trigger macOS security warnings. That's fine for testing
+    (right-click → Open). Code signing ($99/yr Apple Developer account) only matters for a public
+    release.
+
 ## Vertical slice
 <!-- The first real goal: one short, polished chunk that proves the core loop and the look. -->
 - **Which level / area:**
