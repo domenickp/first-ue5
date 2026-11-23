@@ -4,6 +4,7 @@ Design documents for an Unreal Engine 5 game. Fill these out roughly. A messy dr
 
 | File | What goes in it |
 |---|---|
+| [SETUP.md](SETUP.md) | How to install the tools and build the project (Windows and macOS) |
 | [pitch.md](pitch.md) | The one-page overview. **Fill this in first.** |
 | [gameplay.md](gameplay.md) | What the player does: core loop, controls, systems |
 | [world.md](world.md) | Setting, locations, atmosphere, lore |
