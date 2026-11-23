@@ -3,11 +3,15 @@
 Music matters a lot in this game.
 
 ## Music
-- **Phases 1–2 (exploration):** an adventure track on a loop. Moody and a little dark, but
-  earnest.
-- **Castle fight:** the **entire** fight is synchronized to "House of Mirrors" by Arch Enemy and
-  ends when the song ends. Timing details: [music-sync.md](music-sync.md).
-- **Phase 3 (the reversal):** <!-- music after the song ends? silence? a new loop? -->
+- **Phase 1 (exploration):** gentle adventure music on a loop. Moody and a little dark, but
+  earnest. It fades out as the player nears the castle.
+- **Castle yard to end of level (phases 2 and 3):** everything is synchronized to "House of
+  Mirrors" by Arch Enemy (3:40). The level ends with the song. Timing details:
+  [music-sync.md](music-sync.md).
+- **If the song file isn't present** (it's never committed to this repo): play no music, but
+  run the event timeline on a clock exactly as if the song were playing.
+- **Failure warning:** the music itself warns the player as the corruption meter runs low
+  (see [gameplay.md](gameplay.md)).
 - **Adaptive?** <!-- Does the loop change as the player nears the castle? -->
 - **References:** "House of Mirrors" by Arch Enemy
 

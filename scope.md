@@ -28,9 +28,18 @@
 <!-- Anything you're unsure about. These become discussion topics. -->
 - ~~2D or 3D side view?~~ **3D world viewed from the side.** The seamless transition is essential.
 - ~~What's synced to the song?~~ **The whole castle fight.** It ends with the song; falling behind = death.
-- What does "keeping up" with the sequence mean exactly? (See music-sync.md.)
-- Transformation: draft written in story.md. Still open: does phase 3 stay in first person?
-- Where does phase 3 happen: the yard, or back across the whole level?
-- ~~How does it end?~~ A powerful demon assigns tasks and the player accepts. Details later.
-- What happens when the player dies? Restart the castle fight and the song?
-- What music plays in phase 3, after the song ends?
+- ~~What does "keeping up" mean?~~ **Corruption meter**, relative to the checkpoints. Draft in gameplay.md.
+- ~~What happens on death in the castle?~~ Restart the castle fight and the song.
+- ~~Music in phase 3?~~ The song continues; the whole level ends with it.
+- Can the player act while the boss emerges (0:55–1:06)?
+  - Yes, the player should be kept busy fighting the last of wave 1.
+- Does phase 3 stay in first person, and does the corruption meter still apply there?
+  - Phase 3 should be first person.
+- Where does phase 3 happen: the yard, or back across the whole level? (A 76-second window suggests the yard.)
+  - The yard.
+- What happens between 3:20 (wave 3 deadline) and 3:33 (artifact smash)?
+  - Emergence of a god like demon that instructs the player to continue to purge corrupted souls.
+- What is the personal artifact, and where is it introduced?
+  - The artifact should be referenced in the introduction text, being gifted as a sign of allegience to the ruler.
+- What happens on death in the side-scroller?
+  - Restart about one screen back, or possibly at one of a few set checkpoints.

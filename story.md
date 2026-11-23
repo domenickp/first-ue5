@@ -18,41 +18,58 @@ critical to the narrative.
 ## Beat outline
 <!-- Tag each beat [CUTSCENE], [PLAYABLE] or [BOTH]. Phase names are working labels. -->
 
-### Phase 1 — The Hunt (side-scroller)
-- [PLAYABLE] The hunter travels through a hilly, grassy landscape toward the castle.
+### Phase 1 — The Hunt (side-scroller, about 5 minutes)
+- [TEXT] Introduction: the hunter has been tasked by **the ruler** with finding the source of the
+  evil plaguing the land and eliminating it, by whatever means necessary. The text mentions the
+  **personal artifact** the ruler gave the hunter as a sign of allegiance.
+- [PLAYABLE] The hunter travels through a hilly, grassy landscape toward the castle. The sun
+  fades as they go.
+- [PLAYABLE] A couple of NPCs give directions to the castle, and a warning.
 - [PLAYABLE] Platforming obstacles and low-level enemies that look only slightly evil.
 - [PLAYABLE] Rudimentary weapons: basic melee and low-power firearms.
-- [?] The hunter reaches the castle and enters the yard.
+- [PLAYABLE] Nearing the castle, the side view zooms out a little.
+- [CUTSCENE] The hunter enters the yard; the camera swings into first person (start of the synced
+  sequence).
 
 ### Phase 2 — The Castle Yard (first person, synced to "House of Mirrors")
-<!-- The whole castle fight runs on the song's timeline and ends when the song does.
-     Exact timings: music-sync.md -->
+<!-- Everything from entering the yard to the end of the level (phases 2 and 3) runs on the
+     song's 3:40 timeline. Exact timings: music-sync.md -->
 
-- [CUTSCENE] On entering the yard, the camera swings into first person.
-- [CUTSCENE] The hunter picks up a powerful melee weapon and a firearm, both imbued with evil.
-  The player has no control here.
-- [PLAYABLE] **Wave 1:** chaos breaks out. Low-level but fierce enemies pour out of the
-  castle's door and windows and charge. It's intense, but easy with the new weapons.
-- [PLAYABLE] **Wave 2:** stronger minions pour out. A hexagram portal opens and a boss demon
-  rises out of the ground.
-- [CUTSCENE] The boss fully emerges and roars. The player is thrown through the air with the
-  view rotated sideways, hits a fence and takes damage.
-- [PLAYABLE] The player gets back up. **Boss fight:** the boss and the wave-2 minions all at once.
+- [CUTSCENE] 0:00: on entering the yard, the camera swings into first person.
+- [CUTSCENE] 0:08: the hunter picks up a powerful melee weapon and a firearm, both imbued with
+  evil. The player has no control here.
+- [CUTSCENE] 0:11: the castle's windows and doors light up red as the synth comes in.
+- [PLAYABLE] 0:21, on the first scream: **Wave 1.** Chaos breaks out. Low-level but fierce
+  enemies pour out of the castle's door and windows and charge. It's intense, but easy with the
+  new weapons. They must be cleared by 0:54.
+- [?] 0:55: a hexagram portal opens and the boss demon rises out of the ground with a sword.
+  <!-- Can the player act during the emergence (0:55–1:06), or is it a cutscene? -->
+- [CUTSCENE] 1:06, on "Welcome home": the boss roars. The player is thrown through the air with
+  the view rotated sideways, hits a fence and takes damage.
+- [PLAYABLE] 1:07, as the fast drumming starts: **Wave 2.** Stronger minions pour out.
+- [PLAYABLE] 1:08: the player gets back up. **Boss fight:** the boss and the wave-2 minions at once.
+  The boss must be dead by 1:40 and the remaining minions by 1:55.
 
-### Phase 3 — The Reversal
-- [CUTSCENE] The boss dies as the song ends. The hunter has aligned with the evil powers in the
-  weapons and transforms into an evil entity (see *The transformation* below).
-- [PLAYABLE] More demons appear, but now they are afraid of the player.
-- [PLAYABLE] The task: eliminate every demon in the level as they try to run away.
-- [?] Ending: a powerful demon starts assigning tasks to the player, and the player accepts.
-  <!-- Details to be expanded. -->
+### Phase 3 — The Reversal (still synced, 1:56–3:40)
+- [CUTSCENE] 1:56–2:03, on "Distort your flesh and bone": the hunter has aligned with the evil
+  powers in the weapons and transforms into an evil entity (see *The transformation* below).
+  It ends on the second "Welcome home".
+- [PLAYABLE] 2:04, as the grinding guitar starts: **Wave 3.** More demons appear, but now they
+  are afraid of the player and run away.
+- [PLAYABLE] The task: eliminate every one of them by 3:20 (the third "Welcome home").
+- [CUTSCENE] 3:20: a godlike demon emerges and instructs the player to keep purging
+  corrupted souls.
+- [CUTSCENE] 3:33, on the sound of breaking glass: the player smashes their **personal artifact**,
+  the token of allegiance to the ruler, and pledges fealty to the godlike demon. The song ends at 3:40.
 
 ## Choices & branching
 None. The story is linear.
 
 ## Ending(s)
 This level is a **pivotal chapter**, not the whole story. It ends with the player, now a demon,
-accepting tasks from a powerful demon. That's the hook into the levels that come after.
+smashing the ruler's token of allegiance and pledging fealty to a godlike demon, who sends them to
+purge corrupted souls.
+That's the hook into the levels that come after.
 
 ## Wider story (future levels)
 More levels are planned **before and after** this one. This level is the turning point where the

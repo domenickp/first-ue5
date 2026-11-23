@@ -17,8 +17,12 @@
 
 ### Location: The hills
 - **Role in the game:** phase 1, the side-scrolling journey
-- **Description:** a hilly, grassy landscape
+- **Description:** a hilly landscape of familiar grassland or tundra, like the calm areas of Skyrim
 - **Weather / mood:** moody, a little dark, but expressing earnest adventure
+- **Progression:** the sun gradually fades and the land darkens toward the castle, with more and
+  more dead trees and a couple of animal carcasses near the end
+- **Characters:** a couple of NPCs (directions, a warning)
+- **Loot:** ammo and health from defeated enemies and containers
 - **Gameplay here:** platforming obstacles and low-level enemies
 - **Key landmarks:** the castle, visible in the distance? <!-- -->
 
