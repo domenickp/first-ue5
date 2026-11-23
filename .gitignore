@@ -34,3 +34,6 @@ Content/Licensed/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Per-user editor sandbox folders
+Content/Developers/
