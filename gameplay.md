@@ -7,26 +7,42 @@ for the order of events.
 
 | Phase | Camera | Loop |
 |---|---|---|
-| 1. The Hunt | Side-scroll | Move → platform over obstacles → fight weak enemies → advance toward the castle |
+| 1. The Hunt | Side-scroll | Move → platform over obstacles → fight weak enemies → pick up items → advance toward the castle |
 | 2. The Castle Yard | First person | Survive waves → kill the boss |
-| 3. The Reversal | <!-- first person? --> | Chase fleeing demons → eliminate all of them |
+| 3. The Reversal | First person | Chase fleeing demons → eliminate all of them |
 
 ## Player verbs
 <!-- Tag each one [MUST] / [WANT] / [DREAM]. -->
 - **Phase 1:** move, jump, basic melee attack, shoot a low-power firearm
 - **Phase 2:** move, aim/look, melee with the evil weapon, shoot the evil firearm
-- **Phase 3:** <!-- same as phase 2? new demon abilities? -->
+- **Phase 3:** same as phase 2 plus new demon abilities (energy charge, melee weapon emits energy wave)
 
 ## Controls
 | Action | Keyboard/Mouse | Gamepad |
 |---|---|---|
 | Move | WASD | Left stick |
-|  |  |  |
+| Look | Mouse Movement | Right stick |
+| Melee | Left Button | Left Trigger |
+| Ranged Weapon | Right Button | Right Trigger |
 
 ## A five-minute play session
 <!-- Write out a short stretch of play in second person:
      "You wake up in ___. You see ___. You press ___ and ___ happens." -->
+Dialogue appears, describing how the player was tasked to find the source of
+the evil plaguing the land, and eliminate it, by whatever means necessary.
+The 2D portion should take about 5 minutes to play through before reaching
+the castle.  The landscape should be familair grasslands or tundra, similar
+to calm areas of Skyrim.  As the level progrsses, the sun should fade, and
+gradually turn darker, with more and more dead trees and a couple animal
+carcasses nearing the castle.  Early in the level, gentle adventure music
+should be the background, fading as the player nears the castle.  Along the
+way, the player should interact with a couple NPCs, which provide directions
+to the castle, and a warning.  The player should loot ammunition and health
+packs from the defeated enemies, and in containers.
 
+As the player approaches the castle, the 2D view should zoom out a little,
+then when closer, the view swings into first person view.  This starts the
+sequence defined in the music sync cue sheet.
 
 ## Systems
 
@@ -63,7 +79,8 @@ for the order of events.
   - Reaching a checkpoint on time refills or resets the meter for the next stretch.
 - **Warning:** the music. As the meter falls, the song gets distorted or muffled, for example.
   <!-- Exact effect TBD. -->
-- **Phase 3:** <!-- does the meter still apply after the transformation, maybe as "hunger"? -->
+- **Phase 3:** The meter should apply after the transformation in order to force sync with
+the music.
 - **Priority:** [MUST]
 
 ### System: Combat, phase 1 (side-scroll)
@@ -82,6 +99,16 @@ for the order of events.
 
 ### System: Health & damage
 - **How it works:** the player takes damage (the fence impact is scripted). <!-- what happens at 0 health? -->
+- **Priority:** [MUST]
+
+### System: Pickups & loot (phase 1)
+- **How it works:** defeated enemies and containers drop ammo and health packs
+- **Open question:** does phase 1 ammo carry over to the evil firearm, or does it have its own supply?
+- **Priority:** [MUST]
+
+### System: Demon abilities (phase 3)
+- **How it works:** an energy charge, and the melee weapon emits an energy wave
+- **Controls:** <!-- which buttons? -->
 - **Priority:** [MUST]
 
 ### System: Fleeing-enemy AI (phase 3)
@@ -123,4 +150,6 @@ Fixed and story-driven: basic weapons → evil weapons → demon form. No upgrad
 
 ## UI / HUD
 <!-- Health bar? Ammo? Does the HUD change between phases or after the transformation? -->
-
+There should be a health bar and ammo counter.  The HUD should change once the demon weapons
+are picked up to show the corruption meter, and the graphics should be more dramatic, and
+glowing purple.  Once in demon form, the HUD should be otherworldly.

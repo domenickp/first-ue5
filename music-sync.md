@@ -56,7 +56,9 @@ windows burst" is exactly the kind of detail that's needed.
 | 1:56 | scripted | Transformation begins |  |
 | 2:03 | scripted | Transformation ends |  |
 | 2:04 | spawn | Wave 3: minions spawn but are scared and run away |  |
+| 0:55 | spawn | (Player is still fighting the last of wave 1 while the boss emerges) | from scope.md |
 | 3:20 | checkpoint | Wave 3 must be cleared by here |  |
+| 3:20 | scripted | Godlike demon emerges; instructs the player to keep purging corrupted souls | from scope.md |
 | 3:33 | scripted | Player smashes personal artifact and pledges fealty to demon |  |
 
 ## "Keeping up": the failure rule

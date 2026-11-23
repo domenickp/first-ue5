@@ -32,8 +32,14 @@
 - ~~What happens on death in the castle?~~ Restart the castle fight and the song.
 - ~~Music in phase 3?~~ The song continues; the whole level ends with it.
 - Can the player act while the boss emerges (0:55–1:06)?
+  - Yes, the player should be kept busy fighting the last of wave 1.
 - Does phase 3 stay in first person, and does the corruption meter still apply there?
+  - Phase 3 should be first person.
 - Where does phase 3 happen: the yard, or back across the whole level? (A 76-second window suggests the yard.)
+  - The yard.
 - What happens between 3:20 (wave 3 deadline) and 3:33 (artifact smash)?
+  - Emergence of a god like demon that instructs the player to continue to purge corrupted souls.
 - What is the personal artifact, and where is it introduced?
+  - The artifact should be referenced in the introduction text, being gifted as a sign of allegience to the ruler.
 - What happens on death in the side-scroller?
+  - Restart about one screen back, or possibly at one of a few set checkpoints.

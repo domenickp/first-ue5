@@ -3,8 +3,8 @@
 Music matters a lot in this game.
 
 ## Music
-- **Phases 1–2 (exploration):** an adventure track on a loop. Moody and a little dark, but
-  earnest.
+- **Phase 1 (exploration):** gentle adventure music on a loop. Moody and a little dark, but
+  earnest. It fades out as the player nears the castle.
 - **Castle yard to end of level (phases 2 and 3):** everything is synchronized to "House of
   Mirrors" by Arch Enemy (3:40). The level ends with the song. Timing details:
   [music-sync.md](music-sync.md).

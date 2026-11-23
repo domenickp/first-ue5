@@ -18,11 +18,18 @@ critical to the narrative.
 ## Beat outline
 <!-- Tag each beat [CUTSCENE], [PLAYABLE] or [BOTH]. Phase names are working labels. -->
 
-### Phase 1 — The Hunt (side-scroller)
-- [PLAYABLE] The hunter travels through a hilly, grassy landscape toward the castle.
+### Phase 1 — The Hunt (side-scroller, about 5 minutes)
+- [TEXT] Introduction: the hunter has been tasked by **the ruler** with finding the source of the
+  evil plaguing the land and eliminating it, by whatever means necessary. The text mentions the
+  **personal artifact** the ruler gave the hunter as a sign of allegiance.
+- [PLAYABLE] The hunter travels through a hilly, grassy landscape toward the castle. The sun
+  fades as they go.
+- [PLAYABLE] A couple of NPCs give directions to the castle, and a warning.
 - [PLAYABLE] Platforming obstacles and low-level enemies that look only slightly evil.
 - [PLAYABLE] Rudimentary weapons: basic melee and low-power firearms.
-- [?] The hunter reaches the castle and enters the yard.
+- [PLAYABLE] Nearing the castle, the side view zooms out a little.
+- [CUTSCENE] The hunter enters the yard; the camera swings into first person (start of the synced
+  sequence).
 
 ### Phase 2 — The Castle Yard (first person, synced to "House of Mirrors")
 <!-- Everything from entering the yard to the end of the level (phases 2 and 3) runs on the
@@ -50,18 +57,18 @@ critical to the narrative.
 - [PLAYABLE] 2:04, as the grinding guitar starts: **Wave 3.** More demons appear, but now they
   are afraid of the player and run away.
 - [PLAYABLE] The task: eliminate every one of them by 3:20 (the third "Welcome home").
-  <!-- What happens between 3:20 and 3:33? Does the powerful demon appear? -->
-- [CUTSCENE] 3:33, on the sound of breaking glass: the player smashes a **personal artifact** and
-  pledges fealty to a powerful demon. The song ends at 3:40.
-  <!-- What is the artifact? It probably needs to be introduced earlier (phase 1, or an
-       earlier level) so smashing it means something. -->
+- [CUTSCENE] 3:20: a godlike demon emerges and instructs the player to keep purging
+  corrupted souls.
+- [CUTSCENE] 3:33, on the sound of breaking glass: the player smashes their **personal artifact**,
+  the token of allegiance to the ruler, and pledges fealty to the godlike demon. The song ends at 3:40.
 
 ## Choices & branching
 None. The story is linear.
 
 ## Ending(s)
 This level is a **pivotal chapter**, not the whole story. It ends with the player, now a demon,
-smashing a personal artifact and pledging fealty to a powerful demon, who will assign them tasks.
+smashing the ruler's token of allegiance and pledging fealty to a godlike demon, who sends them to
+purge corrupted souls.
 That's the hook into the levels that come after.
 
 ## Wider story (future levels)
