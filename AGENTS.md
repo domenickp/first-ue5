@@ -16,7 +16,12 @@ A learning/experimental Unreal Engine 5 project. The repo is **public** (a frien
 ## Content rules
 - Don't commit copyrighted audio (e.g. "House of Mirrors" by Arch Enemy) or other unlicensed assets.
   Use placeholders in the repo.
+- Licensed content lives under `Content/Licensed/`, which is gitignored. Code must handle it being
+  absent (e.g. the music-sync timeline runs silently on a clock).
+- Large binaries (`.uasset`, `.umap`, images, audio, 3D files) go through **Git LFS**. See
+  `.gitattributes`. Never commit `Binaries/`, `Intermediate/`, `Saved/` or `DerivedDataCache/`.
 
-## Docs layout
-Design docs are the markdown files at the repo root (`pitch.md`, `gameplay.md`, `story.md`, ...).
-See `README.md` for what each one holds.
+## Layout
+- `docs/`: design docs (`pitch.md`, `gameplay.md`, `story.md`, `music-sync.md`, ...).
+  `docs/README.md` explains what each one holds.
+- The Unreal project (`FirstUE5.uproject`, `Source/`, `Content/`, `Config/`) lives at the repo root.
