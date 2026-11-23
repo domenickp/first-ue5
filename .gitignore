@@ -1,6 +1,36 @@
-# OS / editor files
+# ---- Unreal Engine generated folders (rebuilt automatically) ----
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Build/Windows/
+Build/Mac/
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# Packaged game builds
+Packaged/
+Builds/
+
+# ---- IDE / project files (regenerated from the .uproject) ----
+.vs/
+.vscode/
+.idea/
+*.sln
+*.slnx
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.xcworkspace
+*.xcodeproj/
+xcuserdata/
+
+# ---- Licensed content that must NOT be published (see AGENTS.md) ----
+Content/Licensed/
+
+# ---- OS files ----
 Thumbs.db
 desktop.ini
 .DS_Store
-.vscode/
-.idea/
