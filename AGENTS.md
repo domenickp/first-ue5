@@ -21,6 +21,17 @@ A learning/experimental Unreal Engine 5 project. The repo is **public** (a frien
 - Large binaries (`.uasset`, `.umap`, images, audio, 3D files) go through **Git LFS**. See
   `.gitattributes`. Never commit `Binaries/`, `Intermediate/`, `Saved/` or `DerivedDataCache/`.
 
+## Build (Windows)
+- Engine: Unreal Engine **5.8.4** at `C:\Program Files\Epic Games\UE_5.8`.
+- Build the editor target from the command line (close the Unreal Editor first):
+  ```
+  "C:\Program Files\Epic Games\UE_5.8\Engine\Build\BatchFiles\Build.bat" FirstUE5Editor Win64 Development -Project="<repo>\FirstUE5.uproject" -WaitMutex
+  ```
+- Toolchain: MSVC 14.50 (from the VS 2026 Build Tools install) + Windows SDK 10.0.22621. The
+  required Visual Studio components are listed in `.vsconfig`. The Visual Studio Installer can
+  import that file.
+- Regenerate IDE project files: right-click `FirstUE5.uproject` → *Generate Visual Studio project files*.
+
 ## Layout
 - `docs/`: design docs (`pitch.md`, `gameplay.md`, `story.md`, `music-sync.md`, ...).
   `docs/README.md` explains what each one holds.
