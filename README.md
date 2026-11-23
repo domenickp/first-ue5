@@ -9,6 +9,8 @@ for a fight synchronized to music.
 - **Platforms:** Windows and macOS (Apple Silicon)
 
 ## Getting the project
+**Full setup instructions (Windows and macOS): [docs/SETUP.md](docs/SETUP.md)**
+
 This repo uses **Git LFS** for large binary files (Unreal assets, images, audio). Install it once
 before cloning:
 
