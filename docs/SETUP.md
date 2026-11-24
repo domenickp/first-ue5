@@ -90,6 +90,20 @@ project files**, then open `FirstUE5.sln`. (The `.sln` is generated and not comm
 
 ---
 
+## PR checks
+Every pull request runs three automatic checks on GitHub (`.github/workflows/checks.yml`). They
+**don't compile the game**, because GitHub's servers don't have Unreal Engine, so still build
+locally before opening a PR.
+
+| Check | Catches | Run it locally |
+|---|---|---|
+| **Repo hygiene** | Generated folders (`Binaries/`, `Intermediate/`...), anything in `Content/Licensed/`, assets that skipped Git LFS, large non-LFS files | `python tools/ci/check_repo.py` |
+| **Docs links** | Broken relative links in Markdown files | `python tools/ci/check_links.py` |
+| **C++ formatting** | Code that doesn't match `.clang-format` (Unreal style) | `python tools/ci/check_format.py`. Add `--fix` to reformat. |
+
+The scripts check the files currently staged in git, so run `git add` first. The format check
+uses the clang-format that Visual Studio installs (version 22.1.3, the same version CI uses).
+
 ## Licensed music
 The castle sequence is synced to "House of Mirrors" by Arch Enemy, which is **not** in the repo.
 If you own a copy and want to use it locally, import it into **`Content/Licensed/`** in the

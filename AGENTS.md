@@ -32,6 +32,12 @@ A learning/experimental Unreal Engine 5 project. The repo is **public** (a frien
   import that file.
 - Regenerate IDE project files: right-click `FirstUE5.uproject` → *Generate Visual Studio project files*.
 
+## Checks before opening a PR
+1. Build the editor target (above) when C++ changed. CI cannot compile Unreal code.
+2. `python tools/ci/check_format.py --fix`, then stage everything and run
+   `python tools/ci/check_repo.py` and `python tools/ci/check_links.py`.
+   CI (`.github/workflows/checks.yml`) runs the same three scripts on every PR.
+
 ## Layout
 - `docs/`: design docs (`pitch.md`, `gameplay.md`, `story.md`, `music-sync.md`, ...).
   `docs/README.md` explains what each one holds.

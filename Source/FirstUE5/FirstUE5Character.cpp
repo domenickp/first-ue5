@@ -187,7 +187,8 @@ FTransform AFirstUE5Character::ComputeSideViewTransform(float DeltaTime)
 	}
 	else
 	{
-		SmoothedSideCameraLocation = FMath::VInterpTo(SmoothedSideCameraLocation, Target, DeltaTime, SideCameraLagSpeed);
+		SmoothedSideCameraLocation =
+			FMath::VInterpTo(SmoothedSideCameraLocation, Target, DeltaTime, SideCameraLagSpeed);
 	}
 
 	// Look straight across at the track (toward +Y), tilted slightly down.
