@@ -1,0 +1,58 @@
+# C++ formatting rules, close to Epic's Unreal Engine coding standard.
+# Checked on every PR (clang-format 22.1.3). Format a file locally with:
+#   clang-format -i Source/FirstUE5/MyFile.cpp
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+# Tabs for indentation, 4 wide (Unreal convention)
+UseTab: ForContinuationAndIndentation
+IndentWidth: 4
+TabWidth: 4
+ContinuationIndentWidth: 4
+ColumnLimit: 120
+
+# Braces on their own line
+BreakBeforeBraces: Allman
+AccessModifierOffset: -4
+IndentCaseLabels: false
+NamespaceIndentation: None
+
+PointerAlignment: Left
+DerivePointerAlignment: false
+
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortLambdasOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: false
+
+AlignAfterOpenBracket: DontAlign
+BinPackArguments: true
+BinPackParameters: true
+AlwaysBreakTemplateDeclarations: Yes
+BreakConstructorInitializers: BeforeComma
+LambdaBodyIndentation: OuterScope
+
+# Keep #include order as written (Unreal requires the matching header / generated.h placement)
+SortIncludes: Never
+
+# Unreal reflection macros: treat as statements so they keep their own lines
+StatementMacros:
+  - UCLASS
+  - USTRUCT
+  - UENUM
+  - UINTERFACE
+  - UPROPERTY
+  - UFUNCTION
+  - UMETA
+  - UPARAM
+  - GENERATED_BODY
+  - GENERATED_UCLASS_BODY
+  - GENERATED_USTRUCT_BODY
+  - GENERATED_UINTERFACE_BODY
+  - GENERATED_IINTERFACE_BODY
+  - IMPLEMENT_PRIMARY_GAME_MODULE
+  - IMPLEMENT_MODULE
+...

@@ -1,0 +1,44 @@
+# Lightweight checks on GitHub's hosted runners. These do NOT compile the game
+# (that needs Unreal Engine, which isn't available on hosted runners).
+# The same scripts can be run locally. See docs/SETUP.md.
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  repo-hygiene:
+    name: Repo hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false # the check reads LFS pointers from git directly
+      - run: python3 tools/ci/check_repo.py
+
+  doc-links:
+    name: Docs links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/ci/check_links.py
+
+  cpp-format:
+    name: C++ formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install clang-format==22.1.3
+      - run: python tools/ci/check_format.py
