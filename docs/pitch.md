@@ -35,8 +35,10 @@ and the player's last task is to hunt every one of them down.
    player gets drawn into the corruption, not just a change of gameplay.
 2. **Power that corrupts.** Each step makes the player stronger and less heroic, until hunter
    and hunted swap places.
-3. **The music drives the climax.** The final sequence is choreographed to the song.
-4. **Small but complete.** One level, about 20 minutes, polished from start to finish.
+3. **The music tells the story.** In certain scenes the action is choreographed to the song, and
+   the game plays like a music video for it, not like a game with music in the background. The
+   story beats follow the song's lyrics and its changes in the music, not its tempo or beat.
+4. **Small but complete.** One level, about 9 minutes, polished from start to finish.
 
 ## Reference points
 - **Plays like:** Modern side-scrollers like Hollow Knight at first, then a Doom-like

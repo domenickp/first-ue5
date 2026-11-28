@@ -57,10 +57,18 @@ sequence defined in the music sync cue sheet.
 - **Priority:** [MUST]
 
 ### System: Music sync (castle fight)
-- **Purpose:** Pillar 3, "the music drives the climax"
+- **Purpose:** Pillar 3, "the music tells the story". In music-driven scenes the game is a music
+  video for the song: the song is the script, and the action follows it.
+- **What drives the action:** the song's **lyrics** and its **changes in the music** (new sections,
+  shifts in intensity). Not the tempo or individual beats. Timing to the second is enough.
 - **How it works:** everything from entering the yard to the end of the level runs on the
   song's 3:40 timeline. Waves, the boss emergence, the transformation and other events fire at
   set points in the song. The level ends when the song ends.
+- **The song is the master clock:** events follow the song's playback position, so they can't
+  drift away from the music. Without the song file, the same timeline runs silently.
+- **Authored as data:** the timeline is a spreadsheet-style file,
+  `MusicTimelines/HouseOfMirrors.csv`, edited directly (no code). The system is reusable: any
+  scene can have its own song and timeline file.
 - **Failure:** if the player doesn't keep up with the sequence, they die. See *Corruption meter*.
 - **On death:** restart the castle fight and the song from the beginning.
 - **Details:** see [music-sync.md](music-sync.md)

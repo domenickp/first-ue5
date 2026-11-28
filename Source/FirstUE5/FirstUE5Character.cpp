@@ -7,6 +7,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "Engine/LocalPlayer.h"
+#include "EngineUtils.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/PlayerController.h"
 #include "InputAction.h"
@@ -14,6 +15,7 @@
 #include "InputCoreTypes.h"
 #include "InputMappingContext.h"
 #include "InputModifiers.h"
+#include "MusicSync/MusicDirector.h"
 #include "UObject/ConstructorHelpers.h"
 
 AFirstUE5Character::AFirstUE5Character()
@@ -136,6 +138,12 @@ void AFirstUE5Character::EnterFirstPersonMode()
 
 void AFirstUE5Character::ResetToSideScroll()
 {
+	// Rewind any music-driven scene too, so the whole sequence can be replayed.
+	for (TActorIterator<AMusicDirector> It(GetWorld()); It; ++It)
+	{
+		It->StopTimeline();
+	}
+
 	TeleportTo(SpawnTransform.GetLocation(), SpawnTransform.Rotator());
 	GetCharacterMovement()->StopMovementImmediately();
 	if (Controller)

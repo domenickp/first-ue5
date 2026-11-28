@@ -1,7 +1,9 @@
 #include "PerspectiveSwitchTrigger.h"
 
 #include "Components/BoxComponent.h"
+#include "EngineUtils.h"
 #include "FirstUE5Character.h"
+#include "MusicSync/MusicDirector.h"
 
 APerspectiveSwitchTrigger::APerspectiveSwitchTrigger()
 {
@@ -26,8 +28,27 @@ void APerspectiveSwitchTrigger::BeginPlay()
 void APerspectiveSwitchTrigger::OnBoxBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (AFirstUE5Character* Character = Cast<AFirstUE5Character>(OtherActor))
+	AFirstUE5Character* Character = Cast<AFirstUE5Character>(OtherActor);
+	if (!Character || Character->GetPerspective() != ECameraPerspective::SideScroll)
 	{
-		Character->StartFirstPersonTransition();
+		return;
+	}
+
+	Character->StartFirstPersonTransition();
+
+	if (bStartMusicTimeline)
+	{
+		if (!MusicDirector)
+		{
+			for (TActorIterator<AMusicDirector> It(GetWorld()); It; ++It)
+			{
+				MusicDirector = *It;
+				break;
+			}
+		}
+		if (MusicDirector)
+		{
+			MusicDirector->StartTimeline();
+		}
 	}
 }

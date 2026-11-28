@@ -1,8 +1,61 @@
 # Music Sync — Castle Fight
 
-The whole castle fight runs on the timeline of "House of Mirrors". This file is the **cue sheet**:
-a timeline of the song with what happens in the game at each point. Fill in the song's sections
-first, then attach events to them.
+The whole castle fight runs on the timeline of "House of Mirrors". In this scene the game is a
+music video for the song: the lyrics and the changes in the music tell the story, and the action
+follows them.
+
+> **The live timeline is [`MusicTimelines/HouseOfMirrors.csv`](../MusicTimelines/HouseOfMirrors.csv).**
+> The game reads that file directly, so edit it to change the scene. The tables further down are
+> the original cue sheet it was built from, kept as the design record.
+
+## Editing the timeline
+Open `MusicTimelines/HouseOfMirrors.csv` in Excel, Google Sheets or any text editor. Each row is
+one **cue**:
+
+| Column | What to write | Example |
+|---|---|---|
+| **Time** | When it happens: `m:ss` (or `m:ss.s`, or plain seconds) | `1:07` |
+| **Kind** | `Section` (a change in the music), `Lyric`, `Event` (something happens in the game), `Checkpoint`, or `End` | `Event` |
+| **Id** | A short name, one word with no spaces. Level objects react to this name. | `Wave2` |
+| **Description** | Anything. Wrap it in quotes if it contains a comma. | `Wave 2: stronger minions` |
+| **Intensity** | Optional, mainly for sections | `Peak` |
+
+- Rows can be in any order; the game sorts them by time.
+- Lines starting with `#` are comments.
+- There must be exactly one `End` row, and nothing after it.
+- Save it as **CSV**. If Excel asks, keep the CSV format.
+
+**To see your changes:** save the file and press **Play**. The game re-reads the file every
+time the scene starts, so you don't need to rebuild anything. Mistakes (like a mistyped
+time) appear in red on screen and are also caught on the PR by the *Music timelines* check.
+
+## Seeing it play
+While a music-driven scene runs, development builds show (on screen):
+- a status line: the song clock, the current **section** and the **next** cue;
+- each cue as it fires, colour-coded: sections green, lyrics blue, events white,
+  checkpoints yellow, the end purple.
+
+In the editor, select the **Music Director** in the level to change these settings in the
+Details panel:
+- **Debug Start At Seconds:** start part-way through, e.g. `110` to jump straight to the
+  transformation instead of waiting through the whole song.
+- **Song:** the song asset (from `Content/Licensed/`). Leave it empty to run silently.
+- **Show Debug Display:** turn the on-screen text off.
+
+## Blocking out a scene with stand-ins
+Until real enemies and effects exist, place **Music Cue Reactor** objects (grey cubes) to see
+the choreography. Each one has a list of **Reactions**: a cue **Id** plus what to do:
+
+| Reaction | What it does |
+|---|---|
+| **Show** | Appears. (Starts hidden.) |
+| **Hide** | Disappears. |
+| **Light On / Light Off** | Turns its light on or off (red by default, e.g. glowing windows). |
+| **Rise** | Rises out of the ground. (Starts underground.) |
+
+Example: a boss stand-in with *BossEmerge → Rise* and *BossDead → Hide*.
+
+**Backspace** (the debug reset) also rewinds the scene, so you can replay it as often as you like.
 
 ## How to fill this in
 1. Play the song with a timer (or in a free audio editor like Audacity, which shows the time).
