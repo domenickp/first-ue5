@@ -34,11 +34,22 @@ A learning/experimental Unreal Engine 5 project. The repo is **public** (a frien
 
 ## Checks before opening a PR
 1. Build the editor target (above) when C++ changed. CI cannot compile Unreal code.
-2. `python tools/ci/check_format.py --fix`, then stage everything and run
-   `python tools/ci/check_repo.py` and `python tools/ci/check_links.py`.
-   CI (`.github/workflows/checks.yml`) runs the same three scripts on every PR.
+2. Run the Unreal automation tests (`FirstUE5.*`; command in `docs/SETUP.md`) when C++ or
+   `MusicTimelines/` changed.
+3. `python tools/ci/check_format.py --fix`, then stage everything and run
+   `python tools/ci/check_repo.py`, `python tools/ci/check_links.py` and
+   `python tools/ci/check_timelines.py`.
+   CI (`.github/workflows/checks.yml`) runs the same four scripts on every PR.
+
+## Music-driven scenes
+- Timelines are CSV files in `MusicTimelines/`, authored by the owner. Treat them as content:
+  don't rewrite cue times or descriptions without being asked.
+- `AMusicDirector` plays the song and fires cues; the song's playback position is the clock.
+  Game code reacts to cues by `Id` (bind to `OnCue`), never by hard-coded times.
 
 ## Layout
 - `docs/`: design docs (`pitch.md`, `gameplay.md`, `story.md`, `music-sync.md`, ...).
   `docs/README.md` explains what each one holds.
 - The Unreal project (`FirstUE5.uproject`, `Source/`, `Content/`, `Config/`) lives at the repo root.
+- `MusicTimelines/`: music-scene timelines (CSV), read at runtime and shipped with packaged builds.
+- `tools/ci/`: the check scripts CI runs.

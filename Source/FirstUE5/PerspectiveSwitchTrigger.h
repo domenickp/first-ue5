@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "PerspectiveSwitchTrigger.generated.h"
 
+class AMusicDirector;
 class UBoxComponent;
 
 UCLASS()
@@ -22,6 +23,14 @@ protected:
 	/** The trigger volume. Resize it in the editor with the Box's "Box Extent" property. */
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 	TObjectPtr<UBoxComponent> Box;
+
+	/** Start a music-driven scene when the swing begins (the song's 0:00 is entering the yard). */
+	UPROPERTY(EditAnywhere, Category = "Music Sync")
+	bool bStartMusicTimeline = true;
+
+	/** The director to start. Leave empty to use the first Music Director in the level. */
+	UPROPERTY(EditAnywhere, Category = "Music Sync", meta = (EditCondition = "bStartMusicTimeline"))
+	TObjectPtr<AMusicDirector> MusicDirector;
 
 private:
 	UFUNCTION()

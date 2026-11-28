@@ -99,10 +99,20 @@ locally before opening a PR.
 |---|---|---|
 | **Repo hygiene** | Generated folders (`Binaries/`, `Intermediate/`...), anything in `Content/Licensed/`, assets that skipped Git LFS, large non-LFS files | `python tools/ci/check_repo.py` |
 | **Docs links** | Broken relative links in Markdown files | `python tools/ci/check_links.py` |
+| **Music timelines** | Mistakes in `MusicTimelines/*.csv` (bad times, unknown kinds, Ids with spaces, a missing `End`) | `python tools/ci/check_timelines.py` |
 | **C++ formatting** | Code that doesn't match `.clang-format` (Unreal style) | `python tools/ci/check_format.py`. Add `--fix` to reformat. |
 
 The scripts check the files currently staged in git, so run `git add` first. The format check
 uses the clang-format that Visual Studio installs (version 22.1.3, the same version CI uses).
+
+## Automated tests (Unreal)
+The C++ has automation tests (e.g. the music timeline parser, and a test that every timeline
+file loads). They need Unreal, so they run locally, not on GitHub. With the editor closed:
+```bat
+"C:\Program Files\Epic Games\UE_5.8\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" "%CD%\FirstUE5.uproject" -ExecCmds="Automation RunTests FirstUE5; Quit" -unattended -nullrhi -nosplash -nosound -log
+```
+Look for `Test Completed. Result={Success}` lines and `TEST COMPLETE. EXIT CODE: 0` at the end.
+In the editor you can also run them from **Tools → Session Frontend → Automation** (filter: `FirstUE5`).
 
 ## Licensed music
 The castle sequence is synced to "House of Mirrors" by Arch Enemy, which is **not** in the repo.

@@ -32,6 +32,13 @@ jobs:
       - uses: actions/checkout@v4
       - run: python3 tools/ci/check_links.py
 
+  music-timelines:
+    name: Music timelines
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/ci/check_timelines.py
+
   cpp-format:
     name: C++ formatting
     runs-on: ubuntu-latest

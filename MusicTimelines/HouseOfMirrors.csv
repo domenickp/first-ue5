@@ -1,0 +1,32 @@
+Time,Kind,Id,Description,Intensity
+0:00,Section,Intro,Instrumental intro,Building
+0:00,Event,EnterYard,Player enters the yard; camera swings to first person,
+0:08,Event,WeaponPickup,Weapon pickup (player has no control),
+0:11,Section,SynthStart,Imposing synth,Building
+0:11,Event,WindowsGlow,Castle windows and doors light up red,
+0:21,Section,VocalsStart,Sudden scream starts the song,Peak
+0:21,Event,Wave1,Wave 1: fierce low-level demons pour from the door and windows,
+0:54,Checkpoint,Wave1Cleared,Wave 1 must be cleared by here,
+0:55,Section,FirstRefrain,Music slows to an unrelenting pace,Peak
+0:55,Event,BossEmerge,Hexagram portal opens; boss rises out of the ground with sword (player still fighting the last of wave 1),
+1:00,Lyric,SharpenedBlade,"""Sharpened blade""",
+1:06,Lyric,WelcomeHome1,"""Welcome home"" (1st)",
+1:06,Event,BossRoar,Boss roars; player thrown into the fence,
+1:07,Section,FastDrumming,Pace increase,Peak
+1:07,Event,Wave2,Wave 2: stronger minions,
+1:08,Event,BossFight,Boss fight begins,
+1:40,Section,SecondRefrain,Music slows to an unrelenting pace,Peak
+1:40,Checkpoint,BossDead,Boss must be dead by here,
+1:55,Checkpoint,Wave2Cleared,Wave 2 must be cleared by here,
+1:56,Lyric,DistortFlesh,"""Distort your flesh and bone""",
+1:56,Event,TransformStart,Transformation begins,
+2:03,Lyric,WelcomeHome2,"""Welcome home"" (2nd)",
+2:03,Event,TransformEnd,Transformation ends,
+2:04,Section,GrindingGuitar,Music slows to an unrelenting pace,Peak
+2:04,Event,Wave3,Wave 3: minions spawn but are scared and run away,
+3:20,Lyric,WelcomeHome3,"""Welcome home"" (3rd)",
+3:20,Checkpoint,Wave3Cleared,Wave 3 must be cleared by here,
+3:20,Event,GodDemon,Godlike demon emerges; instructs the player to keep purging corrupted souls,
+3:33,Section,GlassBreaking,Sound of breaking glass,Release
+3:33,Event,ArtifactSmash,Player smashes the personal artifact and pledges fealty,
+3:40,End,SongEnd,Song ends,
